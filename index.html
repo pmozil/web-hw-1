@@ -1,14 +1,127 @@
+<!-- LINK TO DESIGN -->
+<!-- https://www.figma.com/file/8kGztzSNcw13n1uXEugrjV/Travel?node-id=108%3A84&t=R3pZyRiYkfAaZbPf-0 -->
+
 <!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Placeholder</title>
-</head>
-
-<body>
-    Text
-</body>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Houter</title>
+  </head>
+  <body>
+    <header class="header-nav">
+      <img class="nav-logo" src="./icons/logo.svg" alt="Logo" />
+      <nav class="nav">
+        <a class="header-link" href="#">About Us</a>
+        <a class="header-link" href="#">Article</a>
+        <select class="service-select">
+          <option class="service-option">Property</option>
+          <option class="service-option">Rent</option>
+        </select>
+        <button class="sign-up-btn">Sign up</button>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="banner">
+        <div>
+          <h1 class="banner-header">
+            Find The Place To Live Your Dreams
+          </h1>
+          <p class="banner-text">
+            Everything you need about finding your place to live will be here,
+            where it will be easier for you
+          </p>
+          <div class="banner-actions">
+            <input type="text" id="banner-search" name="banner-search">
+                Search for the location you want!
+            </input>
+            <button class="banner-search-btn">Search</button>
+          </div>
+          <img class="banner-img" src="./icons/houter_nav_img.png" alt="Traveller" />
+          <div class="banner-sponsors">
+          </div>
+            <img
+              class="sponsor-img"
+              src="./icons/traveloka.png"
+              alt="Traveloka logo"
+            />
+            <img
+              class="sponsor-img"
+              src="./icons/tiketcom.png"
+              alt="Tiket.com logo"
+            />
+            <img
+              class="sponsor-img"
+              src="./icons/airbnb.png"
+              alt="Airbnb logo"
+            />
+            <img
+              class="sponsor-img"
+              src="./icons/tripadvisor.png"
+              alt="Tripadvisor logo"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="recommendations">
+        <div class="recommendations-nav">
+          <h3 class="recommendations-nav-text">Featred houses</h3>
+          <button class="recommendations-nav-buttion-house">house</button>
+          <button class="recommendations-nav-buttion-villa">villa</button>
+          <button class="recommendations-nav-buttion-apartment">apartment</button>
+        </div>
+        <div class="recommendations-list" id="recommendations-list" name="recommendations-list">
+            <!---
+              This part here should have the list of reommendations,
+              but that's for JS to handle
+            -->
+        </div>
+      </section>
+      <section class="ready-to-sell">
+        <h3 class="ready-to-sell-nav-text">Ready to sell</h3>
+        <div class="ready-to-sell-post">
+            <!---
+              This part here should have the best reommendation,
+              but that's for JS to handle
+            -->
+        </div>
+      </section>
+      <section class="user-feedback">
+        <h3 class="feedback-nav-text">What do our users say sbout us?</h3>
+        <div class="house-comments">
+            <!---
+              This part here should have the user comments on the hoses they bought,
+              but that's for JS to handle
+            -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer-nav">
+      <img class="nav-logo" src="./icons/logo.svg" alt="Logo" />
+      <p class="footer-text">
+        We provide information about properties such as houses,
+        villas and apartments to help people find their dream home
+      </p>
+      <h3 class="footer-nav-text">Property</h3>
+      <nav class="property-nav">
+        <a class="footer-link" href="#">House</a>
+        <a class="footer-link" href="#">Apartment</a>
+        <a class="footer-link" href="#">Villa</a>
+      </nav>
+      <h3 class="footer-nav-text">Article</h3>
+      <nav class="article-nav">
+        <a class="footer-link" href="#">New Article</a>
+        <a class="footer-link" href="#">Popular Article</a>
+        <a class="footer-link" href="#">Most Read</a>
+        <a class="footer-link" href="#">Tips & Tricks</a>
+      </nav>
+      <h3 class="footer-nav-text">Contact</h3>
+      <p class="footer-contact-text">
+        info@hounter.com
+        (671) 555-0110
+        2464 Royal Ln. Mesa, New Jersey 45463
+        Contact
+      </p>
+    <footer/>
+  </body>
 </html>
