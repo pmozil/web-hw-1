@@ -41,21 +41,25 @@
           <div class="banner-sponsors">
           </div>
             <img
+              height=96
               class="sponsor-img"
               src="./icons/traveloka.png"
               alt="Traveloka logo"
             />
             <img
+              height=96
               class="sponsor-img"
               src="./icons/tiketcom.png"
               alt="Tiket.com logo"
             />
             <img
+              height=96
               class="sponsor-img"
               src="./icons/airbnb.png"
               alt="Airbnb logo"
             />
             <img
+              height=96
               class="sponsor-img"
               src="./icons/tripadvisor.png"
               alt="Tripadvisor logo"
@@ -75,31 +79,45 @@
               This part here should have the list of reommendations,
               but that's for JS to handle
             -->
+            <div class="recommendation">
+                <img class="house-img" src="https://picsum.photos/400/300" alt="House picture"/>
+                <h4 class="hose-name">House name </h4>
+                <img class="user-icon" width=80 src="https://picsum.photos/180" alt="User icon"/>
+                <p class="house-price"> $123, 456 </p>
+                <p class="user-name"> user name </p>
+            </div>
         </div>
       </section>
       <section class="ready-to-sell">
         <h3 class="ready-to-sell-nav-text">Ready to sell</h3>
+        <video class="ready-to-sell-video" width="480" height="270" controls>
+            <source src="icons/vid.mp4" alt="house video"/>
+        </video<
         <div class="ready-to-sell-post">
-            <!---
-              This part here should have the best reommendation,
-              but that's for JS to handle
-            -->
+            <h3 class="ready-to-sell-header">Let's Tour And See Out House!</h3>
+            <div class="icon-texts">
+                <p class="icon-text">4 bedrooms</p>
+                <p class="icon-text">2 bathrooms</p>
+                <p class="icon-text">1 carport</p>
+                <p class="icon-text">2 floors</p>
+            </div>
+            <img class="user-icon" width=80 src="https://picsum.photos/180" alt="User icon"/>
+            <p class="user-name"> user name </p>
+            <button class="contact-button">Contact now</button>
         </div>
       </section>
       <section class="user-feedback">
         <h3 class="feedback-nav-text">What do our users say sbout us?</h3>
-        <!---
-            Sorry, the 1920x1080 video that went out of bound was just too
-            hard to look at (
-        -->
-        <video class="ready-to-sell-video" width="480" height="270" controls>
-            <source src="icons/vid.mp4" alt="house video"/>
-        </video<
-        <div class="house-comments">
-            <!---
-              This part here should have the user comments on the hoses they bought,
-              but that's for JS to handle
-            -->
+        <div class="house-post">
+            <img class="house-image" src="https://picsum.photos/400" alt="User icon"/>
+            <div class="user-feedback">
+                <p class="comment">
+                    Comment text
+                </p>
+                <img class="user-icon" width=80 src="https://picsum.photos/180" alt="User icon"/>
+                <p class="user-name"> user name </p>
+                <button class="contact-button">Contact now</button>
+            </div>
         </div>
       </section>
     </main>
