@@ -1,6 +1,3 @@
-<!-- LINK TO DESIGN -->
-<!-- https://www.figma.com/file/8kGztzSNcw13n1uXEugrjV/Travel?node-id=108%3A84&t=R3pZyRiYkfAaZbPf-0 -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,23 +20,34 @@
     </header>
     <main class="main">
       <section class="banner">
-        <div>
-          <h1 class="banner-header">
+        <h1 class="banner-header">
             Find The Place To Live Your Dreams
-          </h1>
-          <p class="banner-text">
+        </h1>
+        <p class="banner-text">
             Everything you need about finding your place to live will be here,
             where it will be easier for you
-          </p>
-          <div class="banner-actions">
+        </p>
+        <section class="header-promo-section">
+            <img src="icons/houter_nav_img.png" alt="Image"/>
+            <section class="promos">
+                <div class="promo-object">
+                    <p> 1k+ People </p>
+                    <img width=40 src="https://picsum.photos/180" alt="people icon"/>
+                </div>
+
+                <div class="promo-object">
+                    <p> 56 houses </p>
+                    <img width=40 src="https://picsum.photos/180" alt="houses icon"/>
+                </div>
+            </section>
+        </section>
+        <section class="header-search">
             <input type="text" id="banner-search" name="banner-search">
                 Search for the location you want!
             </input>
             <button class="banner-search-btn">Search</button>
-          </div>
-          <img class="banner-img" src="./icons/houter_nav_img.png" alt="Traveller" />
-          <div class="banner-sponsors">
-          </div>
+        </section>
+        <aside class="banner-actions">
             <img
               height=96
               class="sponsor-img"
@@ -64,17 +72,16 @@
               src="./icons/tripadvisor.png"
               alt="Tripadvisor logo"
             />
-          </div>
-        </div>
+        </aside>
       </section>
       <section class="recommendations">
-        <div class="recommendations-nav">
+        <nav class="recommendations-nav">
           <h3 class="recommendations-nav-text">Featred houses</h3>
           <button class="recommendations-nav-buttion-house">house</button>
           <button class="recommendations-nav-buttion-villa">villa</button>
           <button class="recommendations-nav-buttion-apartment">apartment</button>
-        </div>
-        <div class="recommendations-list" id="recommendations-list" name="recommendations-list">
+        </nav>
+        <section class="recommendations-list" id="recommendations-list" name="recommendations-list">
             <!---
               This part here should have the list of reommendations,
               but that's for JS to handle
@@ -86,29 +93,29 @@
                 <p class="house-price"> $123, 456 </p>
                 <p class="user-name"> user name </p>
             </div>
-        </div>
+        </section>
       </section>
       <section class="ready-to-sell">
         <h3 class="ready-to-sell-nav-text">Ready to sell</h3>
         <video class="ready-to-sell-video" width="480" height="270" controls>
             <source src="icons/vid.mp4" alt="house video"/>
-        </video<
-        <div class="ready-to-sell-post">
+        </video>
+        <section class="ready-to-sell-post">
             <h3 class="ready-to-sell-header">Let's Tour And See Out House!</h3>
-            <div class="icon-texts">
+            <aside class="icon-texts">
                 <p class="icon-text">4 bedrooms</p>
                 <p class="icon-text">2 bathrooms</p>
                 <p class="icon-text">1 carport</p>
                 <p class="icon-text">2 floors</p>
-            </div>
+            </aside>
             <img class="user-icon" width=80 src="https://picsum.photos/180" alt="User icon"/>
             <p class="user-name"> user name </p>
             <button class="contact-button">Contact now</button>
-        </div>
+        </section>
       </section>
       <section class="user-feedback">
         <h3 class="feedback-nav-text">What do our users say sbout us?</h3>
-        <div class="house-post">
+        <section class="house-post">
             <img class="house-image" src="https://picsum.photos/400" alt="User icon"/>
             <div class="user-feedback">
                 <p class="comment">
@@ -118,7 +125,7 @@
                 <p class="user-name"> user name </p>
                 <button class="contact-button">Contact now</button>
             </div>
-        </div>
+        </section>
       </section>
     </main>
     <footer class="footer-nav">
@@ -140,6 +147,12 @@
         <a class="footer-link" href="#">Most Read</a>
         <a class="footer-link" href="#">Tips & Tricks</a>
       </nav>
+      <section class="find-out-more">
+        <h3 class="find-out-more-header">Find Out More About Selling And Buying Houses</h3>
+        <section class="main-article">
+            
+        </section>
+      </section>
       <h3 class="footer-nav-text">Contact</h3>
       <p class="footer-contact-text">
         info@hounter.com
