@@ -3,80 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css"/>
     <title>Houter</title>
   </head>
   <body>
-    <header class="header-nav">
-      <img class="nav-logo" src="./icons/logo.svg" alt="Logo" />
-      <nav class="nav">
-        <a class="header-link" href="#">About Us</a>
-        <a class="header-link" href="#">Article</a>
-        <select class="service-select">
-          <option class="service-option">Property</option>
-          <option class="service-option">Rent</option>
-        </select>
-        <button class="sign-up-btn">Sign up</button>
-      </nav>
-    </header>
     <main class="main">
       <section class="banner">
-        <h1 class="banner-header">
-            Find The Place To Live Your Dreams
-        </h1>
-        <p class="banner-text">
-            Everything you need about finding your place to live will be here,
-            where it will be easier for you
-        </p>
-        <section class="header-promo-section">
-            <img src="icons/houter_nav_img.png" alt="Image"/>
-            <section class="promos">
-                <div class="promo-object">
-                    <p> 1k+ People </p>
-                    <img width=40 src="https://picsum.photos/180" alt="people icon"/>
-                </div>
+        <section class="main-text">
+          <div class="main-logo">
+            <img class="nav-logo" src="./icons/logo.svg" alt="Logo" />
+            <h1 class="nav-header">Houter</h1>
+          </div> 
 
-                <div class="promo-object">
-                    <p> 56 houses </p>
-                    <img width=40 src="https://picsum.photos/180" alt="houses icon"/>
-                </div>
-            </section>
+          <div class="texts">
+
+            <h1 class="banner-header">
+                Find The Place To Live Your Dreams
+            </h1>
+            <p class="banner-text">
+                Everything you need about finding your place to live will be here,
+                where it will be easier for you
+            </p>
+
+          </div>
+          <section class="header-search">
+              <img class="location-pin-img"
+                src="./icons/pin.svg"
+                alt="Location pin icon"/>
+              <input
+                type="text"
+                class="banner-search"
+                id="banner-search"
+                name="banner-search"
+                placeholder="Search for the location you want!">
+              <button class="banner-search-btn">Search</button>
+              </input>
+          </section>
+          <aside class="sponsors">
+            <h1 class="sponsors-header">Our Sponsors</h1>
+              <img
+                class="sponsor-img"
+                src="./icons/traveloka.png"
+                alt="Traveloka logo"
+              />
+              <img
+                class="sponsor-img"
+                src="./icons/tiketcom.png"
+                alt="Tiket.com logo"
+              />
+              <img
+                class="sponsor-img"
+                src="./icons/airbnb.png"
+                alt="Airbnb logo"
+              />
+              <img
+                class="sponsor-img"
+                src="./icons/tripadvisor.png"
+                alt="Tripadvisor logo"
+              />
+          </aside>
         </section>
-        <section class="header-search">
-            <input type="text" id="banner-search" name="banner-search">
-                Search for the location you want!
-            </input>
-            <button class="banner-search-btn">Search</button>
+
+        <section class="header-promo-section">
+          <nav class="nav">
+            <a class="header-link" href="#">About Us</a>
+            <a class="header-link" href="#">Article</a>
+            <select class="service-select">
+              <option class="service-option">Property</option>
+              <option class="service-option">Rent</option>
+            </select>
+            <button class="sign-up-btn">Sign up</button>
+          </nav>
+          <section class="promos">
+              <div class="promo-object">
+                  <img src="https://picsum.photos/180" alt="people icon"/>
+                  <p> 1k+ People </p>
+              </div>
+
+              <div class="promo-object">
+                  <img src="https://picsum.photos/180" alt="houses icon"/>
+                  <p> 56 houses </p>
+              </div>
+          </section>
         </section>
-        <aside class="banner-actions">
-            <img
-              height=96
-              class="sponsor-img"
-              src="./icons/traveloka.png"
-              alt="Traveloka logo"
-            />
-            <img
-              height=96
-              class="sponsor-img"
-              src="./icons/tiketcom.png"
-              alt="Tiket.com logo"
-            />
-            <img
-              height=96
-              class="sponsor-img"
-              src="./icons/airbnb.png"
-              alt="Airbnb logo"
-            />
-            <img
-              height=96
-              class="sponsor-img"
-              src="./icons/tripadvisor.png"
-              alt="Tripadvisor logo"
-            />
-        </aside>
       </section>
+
       <section class="recommendations">
         <nav class="recommendations-nav">
-          <h3 class="recommendations-nav-text">Featred houses</h3>
+          <h3 class="recommendations-nav-text">
+            <div class="line"></div>
+            Featured houses
+          </h3>
           <button class="recommendations-nav-buttion-house">house</button>
           <button class="recommendations-nav-buttion-villa">villa</button>
           <button class="recommendations-nav-buttion-apartment">apartment</button>
@@ -88,93 +105,339 @@
             -->
             <div class="recommendation">
                 <img class="house-img" src="https://picsum.photos/400/300" alt="House picture"/>
-                <h4 class="hose-name">House name </h4>
-                <img class="user-icon" width=80 src="https://picsum.photos/180" alt="User icon"/>
+                <h3 class="house-name">House name </h3>
                 <p class="house-price"> $123, 456 </p>
-                <p class="user-name"> user name </p>
+                <div class="user-profile">
+                  <img class="user-icon" src="https://picsum.photos/180" alt="User icon"/>
+                  <div class="user-text"> 
+                    <p class="user-name"> User Name </p>
+                    <p class="user-location"> Town, Place </p>
+                  </div>
+                </div>
+            </div>
+            <div class="recommendation">
+                <img class="house-img" src="https://picsum.photos/400/300" alt="House picture"/>
+                <h3 class="house-name">House name </h3>
+                <p class="house-price"> $123, 456 </p>
+                <div class="user-profile">
+                  <img class="user-icon" src="https://picsum.photos/180" alt="User icon"/>
+                  <div class="user-text"> 
+                    <p class="user-name"> User Name </p>
+                    <p class="user-location"> Town, Place </p>
+                  </div>
+                </div>
+            </div>
+            <div class="recommendation">
+                <img class="house-img" src="https://picsum.photos/400/300" alt="House picture"/>
+                <h3 class="house-name">House name </h3>
+                <p class="house-price"> $123, 456 </p>
+                <div class="user-profile">
+                  <img class="user-icon" src="https://picsum.photos/180" alt="User icon"/>
+                  <div class="user-text"> 
+                    <p class="user-name"> User Name </p>
+                    <p class="user-location"> Town, Place </p>
+                  </div>
+                </div>
+            </div>
+            <div class="recommendation">
+                <img class="house-img" src="https://picsum.photos/400/300" alt="House picture"/>
+                <h3 class="house-name">House name </h3>
+                <p class="house-price"> $123, 456 </p>
+                <div class="user-profile">
+                  <img class="user-icon" src="https://picsum.photos/180" alt="User icon"/>
+                  <div class="user-text"> 
+                    <p class="user-name"> User Name </p>
+                    <p class="user-location"> Town, Place </p>
+                  </div>
+                </div>
+            </div>
+            <div class="recommendation">
+                <img class="house-img" src="https://picsum.photos/400/300" alt="House picture"/>
+                <h3 class="house-name">House name </h3>
+                <p class="house-price"> $123, 456 </p>
+                <div class="user-profile">
+                  <img class="user-icon" src="https://picsum.photos/180" alt="User icon"/>
+                  <div class="user-text"> 
+                    <p class="user-name"> User Name </p>
+                    <p class="user-location"> Town, Place </p>
+                  </div>
+                </div>
+            </div>
+            <div class="recommendation">
+                <img class="house-img" src="https://picsum.photos/400/300" alt="House picture"/>
+                <h3 class="house-name">House name </h3>
+                <p class="house-price"> $123, 456 </p>
+                <div class="user-profile">
+                  <img class="user-icon" src="https://picsum.photos/180" alt="User icon"/>
+                  <div class="user-text"> 
+                    <p class="user-name"> User Name </p>
+                    <p class="user-location"> Town, Place </p>
+                  </div>
+                </div>
             </div>
         </section>
       </section>
       <section class="ready-to-sell">
-        <h3 class="ready-to-sell-nav-text">Ready to sell</h3>
-        <video class="ready-to-sell-video" width="480" height="270" controls>
-            <source src="icons/vid.mp4" alt="house video"/>
-        </video>
-        <section class="ready-to-sell-post">
-            <h3 class="ready-to-sell-header">Let's Tour And See Out House!</h3>
-            <aside class="icon-texts">
-                <p class="icon-text">4 bedrooms</p>
-                <p class="icon-text">2 bathrooms</p>
-                <p class="icon-text">1 carport</p>
-                <p class="icon-text">2 floors</p>
-            </aside>
-            <img class="user-icon" width=80 src="https://picsum.photos/180" alt="User icon"/>
-            <p class="user-name"> user name </p>
-            <button class="contact-button">Contact now</button>
-        </section>
+        <h3 class="ready-to-sell-nav-text">
+          <div class="line"></div>
+          Ready to sell
+        </h3>
+        <div class="sell-post-vid-split" >
+
+          <section class="ready-to-sell-post">
+              <h3 class="ready-to-sell-header">
+                Let's Tour And See Out House!
+              </h3>
+              <span class="ready-to-sell-subheader">Houses recommended by our partners that have been curated to become the home of your dreams</span>
+              <aside class="icon-texts">
+                  <p class="icon-text">
+                    <img class="icon" src="https://picsum.photos/180" alt="bed icon"/>
+                    4 bedrooms
+                  </p>
+                  <p class="icon-text">
+                    <img class="icon" src="https://picsum.photos/180" alt="bed icon"/>
+                    2 bathrooms
+                  </p>
+                  <p class="icon-text">
+                    <img class="icon" src="https://picsum.photos/180" alt="bed icon"/>
+                    1 carport
+                  </p>
+                  <p class="icon-text">
+                    <img class="icon" src="https://picsum.photos/180" alt="bed icon"/>
+                    2 floors
+                  </p>
+              </aside>
+                  <div class="user-profile">
+                    <img class="user-icon" src="https://picsum.photos/180" alt="User icon"/>
+                    <div class="user-text"> 
+                      <p class="user-name"> User Name </p>
+                      <p class="user-location"> Town, Place </p>
+                    </div>
+                      <button class="contact-button">Contact now</button>
+                  </div>
+          </section>
+
+
+          <div class="vid-img-container">
+            <video class="ready-to-sell-video" width="480" height="270">
+              <source class="ready-to-sell-src" src="icons/vid.mp4" alt="house video"/>
+            </video>
+            <img class="vid-img-1" src="https://picsum.photos/180" alt="bed icon"/>
+            <img class="vid-img-2" src="https://picsum.photos/180" alt="bed icon"/>
+          </div>
+        </div>
       </section>
       <section class="user-feedback">
+        <h3 class="feedback-top-text">
+          <div class="line"></div>
+          See Our Review
+        </h3>
         <h3 class="feedback-nav-text">What do our users say sbout us?</h3>
-        <section class="house-post">
-            <img class="house-image" src="https://picsum.photos/400" alt="User icon"/>
-            <div class="user-feedback">
-                <p class="comment">
-                    Comment text
-                </p>
-                <img class="user-icon" width=80 src="https://picsum.photos/180" alt="User icon"/>
-                <p class="user-name"> user name </p>
-                <button class="contact-button">Contact now</button>
-            </div>
-        </section>
+        <div class="house-posts">
+          <section class="house-post">
+              <img class="house-image" src="https://picsum.photos/400" alt="User icon"/>
+              <div class="user-feedback-post">
+                  <p class="comment">
+                      Comment text
+                  </p>
+                <div class="user-profile">
+                  <img class="user-icon" src="https://picsum.photos/180" alt="User icon"/>
+                  <div class="user-text">
+                    <p class="user-name"> User Name </p>
+                    <p class="user-location"> Town, Place </p>
+                  </div>
+                  <div class="stars">
+                    <img class="star" alt="star svg" src="./icons/star.svg"/>
+                    <p class="star-count">4.6</p>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <section class="house-post">
+              <img class="house-image" src="https://picsum.photos/400" alt="User icon"/>
+              <div class="user-feedback-post">
+                  <p class="comment">
+                      Comment text
+                  </p>
+                <div class="user-profile">
+                  <img class="user-icon" src="https://picsum.photos/180" alt="User icon"/>
+                  <div class="user-text">
+                    <p class="user-name"> User Name </p>
+                    <p class="user-location"> Town, Place </p>
+                  </div>
+                  <div class="stars">
+                    <img class="star" alt="star svg" src="./icons/star.svg"/>
+                    <p class="star-count">4.6</p>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <section class="house-post">
+              <img class="house-image" src="https://picsum.photos/400" alt="User icon"/>
+              <div class="user-feedback-post">
+                  <p class="comment">
+                      Comment text
+                  </p>
+                <div class="user-profile">
+                  <img class="user-icon" src="https://picsum.photos/180" alt="User icon"/>
+                  <div class="user-text">
+                    <p class="user-name"> User Name </p>
+                    <p class="user-location"> Town, Place </p>
+                  </div>
+                  <div class="stars">
+                    <img class="star" alt="star svg" src="./icons/star.svg"/>
+                    <p class="star-count">4.6</p>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <section class="house-post">
+              <img class="house-image" src="https://picsum.photos/400" alt="User icon"/>
+              <div class="user-feedback-post">
+                  <p class="comment">
+                      Comment text
+                  </p>
+                <div class="user-profile">
+                  <img class="user-icon" src="https://picsum.photos/180" alt="User icon"/>
+                  <div class="user-text">
+                    <p class="user-name"> User Name </p>
+                    <p class="user-location"> Town, Place </p>
+                  </div>
+                  <div class="stars">
+                    <img class="star" alt="star svg" src="./icons/star.svg"/>
+                    <p class="star-count">4.6</p>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+        </div>
+      </section>
+      <section class="find-out-more">
+        <h3 class="find-out-more-top">
+          <div class="line"></div>
+          See tips and tricks from our partnership
+        </h3>
+        <h3 class="find-out-more-header">
+          Find Out More About Selling And Buying Houses
+        </h3>
+        <div class="articles">
+          <section class="article-list">
+              <div class="article">
+                <img src="https://picsum.photos/400" alt="article-img"/>
+                <div class="article-info">
+                  <h2 class="article-header">Article header</h3>
+                  <p class="article-summary">Article text...</p>
+                  <div class="user-profile">
+                    <img class="user-icon" src="https://picsum.photos/180" alt="User icon"/>
+                    <div class="user-text">
+                      <p class="user-name"> User Name </p>
+                      <p class="user-location"> Town, Place </p>
+                    </div>
+                  </div>
+                  <span class="read-time">6 min read | Feb 02 2024</span>
+                </div>
+              </div>
+
+              <div class="article">
+                <img src="https://picsum.photos/400" alt="article-img"/>
+                <div class="article-info">
+                  <h2 class="article-header">Article header</h3>
+                  <p class="article-summary">Article text...</p>
+                  <div class="user-profile">
+                    <img class="user-icon" src="https://picsum.photos/180" alt="User icon"/>
+                    <div class="user-text">
+                      <p class="user-name"> User Name </p>
+                      <p class="user-location"> Town, Place </p>
+                    </div>
+                  </div>
+                  <span class="read-time">6 min read | Feb 02 2024</span>
+                </div>
+              </div>
+          </section>
+
+          <aside class="main-article">
+              <div class="article">
+                <img src="https://picsum.photos/400" alt="article-img"/>
+                <div class="article-info">
+                  <h2 class="article-header">Article header</h3>
+                  <p class="article-summary">Article text...</p>
+                  <div class="user-profile">
+                    <img class="user-icon" src="https://picsum.photos/180" alt="User icon"/>
+                    <div class="user-text">
+                      <p class="user-name"> User Name </p>
+                      <p class="user-location"> Town, Place </p>
+                    </div>
+                  </div>
+                  <span class="read-time">6 min read | Feb 02 2024</span>
+                </div>
+              </div>
+          </aside>
+
+        </div>
       </section>
     </main>
     <footer class="footer-nav">
-      <img class="nav-logo" src="./icons/logo.svg" alt="Logo" />
-      <p class="footer-text">
-        We provide information about properties such as houses,
-        villas and apartments to help people find their dream home
-      </p>
-      <h3 class="footer-nav-text">Property</h3>
-      <nav class="property-nav">
-        <a class="footer-link" href="#">House</a>
-        <a class="footer-link" href="#">Apartment</a>
-        <a class="footer-link" href="#">Villa</a>
-      </nav>
-      <h3 class="footer-nav-text">Article</h3>
-      <nav class="article-nav">
-        <a class="footer-link" href="#">New Article</a>
-        <a class="footer-link" href="#">Popular Article</a>
-        <a class="footer-link" href="#">Most Read</a>
-        <a class="footer-link" href="#">Tips & Tricks</a>
-      </nav>
-      <section class="find-out-more">
-        <h3 class="find-out-more-header">Find Out More About Selling And Buying Houses</h3>
-        <aside class="main-article">
-            <img src"https://picsum.photos/400" alt="article-img"/>
-            <h2 class="article-header">Article header</h3>
-            <p class="article-summary">Article text...</p>
-        </aside>
-        <section class="article-list">
-            <div class="article-list">
-                <img src"https://picsum.photos/400" alt="article-img"/>
-                <h2 class="article-header">Article header</h3>
-                <p class="article-summary">Article text...</p>
-            </div>
-        </section>
-      </section>
       <section class="mailing-list-signup">
         <h3 class="mailing-list-signup-header">Subscribe For More Info And Update From Houter</h3>
-        <input type="text" class="mailing-list-signup-input" id="mailing-list-signup-input" name="mailing-list-signup-input"/>
-        <button class="mailing-list-signup-button">Sunsribe Now</button>
+          <section class="mailing-list-signup-field">
+              <img class="mail-list-svg"
+                src="./icons/mail.svg"
+                alt="Location pin icon"/>
+              <input
+                type="text"
+                class="mailing-list-signup-input"
+                id="mailing-list-signup-input"
+                name="mailing-list-signup-input"
+                placeholder="Your email here">
+              <button class="mailing-list-btn">Search</button>
+              </input>
+          </section>
       </section>
 
-      <h3 class="footer-nav-text">Contact</h3>
-      <p class="footer-contact-text">
-        info@hounter.com
-        (671) 555-0110
-        2464 Royal Ln. Mesa, New Jersey 45463
-        Contact
-      </p>
+      <div class="footer-insignia">
+        <img class="footer-logo" src="./icons/logo.svg" alt="Logo" />
+        <h2 class="footer-logo-text">
+          Houter
+        </h2>
+
+      </div>
+      <div class="footer-stuff">
+
+        <p class="footer-text">
+          We provide information about properties such as houses,
+          villas and apartments to help people find their dream home
+        </p>
+        <nav class="property-nav">
+        <h3 class="footer-nav-text">Property</h3>
+          <a class="footer-link" href="#">House</a>
+          <a class="footer-link" href="#">Apartment</a>
+          <a class="footer-link" href="#">Villa</a>
+        </nav>
+        <nav class="article-nav">
+        <h3 class="footer-nav-text">Article</h3>
+          <a class="footer-link" href="#">New Article</a>
+          <a class="footer-link" href="#">Popular Article</a>
+          <a class="footer-link" href="#">Most Read</a>
+          <a class="footer-link" href="#">Tips & Tricks</a>
+        </nav>
+        <div class="footer-contact-text">
+        <h3 class="footer-nav-text">Contact</h3>
+        <span class="footer-contact-info">
+          info@hounter.com
+        </span>
+        <span class="footer-contact-info">
+          (671) 555-0110
+        </span>
+        <span class="footer-contact-info">
+          2464 Royal Ln. Mesa, New Jersey 45463
+        </span>
+        <a href="#" class="footer-link footer-contact-info">
+          Contact
+        <a/>
+        </div>
+
+      </div>
     <footer/>
   </body>
 </html>
